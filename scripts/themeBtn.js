@@ -1,7 +1,7 @@
 
 document.getElementById('btn-theme').addEventListener('click', function(event){
 
-    // event.preventDefault();
+    event.preventDefault();
     
     const colorArray = ['yellow', 'indianred', 'purple', 'blue', 'yellowgreen',
         'AliceBlue', 'AntiqueWhite', 'Aqua', 'Aquamarine', 'Azure', 'Beige', 'Bisque', 'BlanchedAlmond', 'Blue', 'BlueViolet', 'Brown', 'BurlyWood', 'CadetBlue',	'Chartreuse', 'Chocolate', 'Coral', 'CornflowerBlue', 'Cornsilk', 'Crimson', 'Cyan', 'DarkBlue', 'DarkCyan', 'DarkGoldenRod', 'DarkGray', 'DarkGrey', 'DarkGreen'
