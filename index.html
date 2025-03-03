@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- adding daisy -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+        body{
+            font-family: 'poppins';
+        }
+    </style>
+</head>
+
+<body id="body" class="bg-red-200 min-h-screen">
+    <section class="container mx-auto p-4">
+        <header>
+            <nav>
+                <div class="navbar bg-base-100 shadow-lg rounded-xl px-6">
+                    <div>
+                        <img class="w-6" src="./assets/logo.png" alt="">
+                    </div>
+                    <div class="flex-1 ml-2">
+                        <a class="text-xl">
+                            <p>Dev<span class="font-bold">Board</span></p>
+                        </a>
+                    </div>
+                    <div class="bg-red-50 py-1 px-3 rounded-full">
+                        <button class="flex justify-center items-center">
+                            <img class="w-4" src="./assets/checkbox.png" alt="">
+                            <span class="font-bold ml-2">23</span>
+                        </button>
+                    </div>
+                    <div id="btn-theme" class="ml-4">
+                        <button class=" bg-red-50 rounded-full p-1.5">
+                            <img class="w-6" src="./assets/theme-btn.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mt-4 grid grid-col-1 md:grid-cols-[3fr_1fr] gap-4">
+            <!-- grid area -->
+            <div class="bg-base-200 p-4 rounded-xl">
+                <!-- heading -->
+                <div class=" md:flex md:justify-around">
+                    <div class="flex items-center bg-blue-100 p-4 rounded-lg flex-none">
+                        <div class="bg-slate-300 p-2 rounded-full">
+                            <img class="w-4" src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                            <p class="font-bold text-xl">05</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex items-center bg-gradient-to-r from-blue-600 to-stone-100  text-white p-4 rounded-xl md:grow md:mx-4 my-4 md:my-0">
+                        <div class="">
+                            <img class="w-8" src="./assets/board.png" alt="">
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                            <p class="font-bold text-xl">05</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-blue-100 p-4 rounded-lg flex-none">
+                        <div class="bg-base-200 p-2 rounded-full">
+                            <img class="w-4" src="./assets/calender.png" alt="">
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                            <p class="font-bold text-xl">05</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="border-dashed border-t-2 border-stone-300 -mx-4 my-4">
+
+                <!-- cards grid -->
+                <div class="grid grid-col-1 md:grid-cols-3 gap-4">
+
+                    <!-- card-1 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="card bg-[#F4F7FF] shadow-sm">
+                        <div class="card-body">
+                            <div>
+                                <button class="py-1 px-3 bg-base-100 rounded-lg text-sm">ShopEase</button>
+                            </div>
+                            <h2 class="card-title text-xl">Fix Mobile Button Issue</h2>
+                            <p class="bg-base-100 p-2 rounded-lg">Debug using Chrome DevTools, check for overlapping...</p>
+                            <hr class="border-dashed border-t-2 border-stone-300 my-1">
+                            <div class="flex justify-between">
+                                <div>
+                                    <p>Deadline</p>
+                                    <p>21 March 2025</p>
+                                </div>
+                                <div class="card-actions justify-end">
+                                    <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- sidebar -->
+            <div class="bg-base-200 rounded-xl  p-4">
+                <div class="flex flex-col items-center">
+                    <div class="flex mb-3 items-center">
+                        <div>
+                            <img class="w-5" src="./assets/activity.png" alt="">
+                        </div>
+                        <p class="ml-3">Activity Log</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Clear History</button>
+                    </div>
+                </div>
+                <!-- <div> -->
+                    <hr class="border-dashed border-t-2 border-stone-300 -mx-4 my-4">
+                <!-- </div> -->
+                <p class="" > activity will be added </p>
+            </div>
+        </main>
+    </section>
+
+<script src="./scripts/themeBtn.js"></script>
+</body>
+
+</html>
