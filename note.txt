@@ -1,0 +1,24 @@
+1. When click on completed button,
+    - Alert (Board Updated Successfully)
+    - Task assined to be reduced 6-1 = 5
+    - Main Navbar +1 
+    - Activity log to be updated as 
+        - You have completed the task Fix Mobile Button Issue at 1:26:53 AM.
+    - Completed button will be disabled.
+
+2. Clear History will remove all update maessage.
+
+3. Discover something new
+    It will take in another page. 
+    - Navbar with logo and Back to Desk button thakbe.
+    - Blogs 
+    - Answer of five questions
+
+Challenges:
+
+1. click the button change the bg color
+2. Current date at heading grid area
+3. Message at activity log Title to be dynamic.
+4. Congrates!!! You have completed all the current task.
+
+
