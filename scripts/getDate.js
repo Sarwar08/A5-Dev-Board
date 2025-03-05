@@ -1,19 +1,29 @@
 
 const currentWeekday = document.getElementById('current-weekday');
+
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const today = new Date().getDay();
-console.log(today);
 
-console.log(days[today]); // Output: Current day (e.g., "Tuesday")
-// days[today]; // Output: Current day (e.g., "Tuesday")
+const today = new Date();
 
-currentWeekday.innerText=days[today];
+const weekDay = today.getDay();
+// .getDay();
+console.log(weekDay);
+
+const weekDayAsName = days[weekDay];
+
+// console.log(days[today]);
+
+currentWeekday.innerText = weekDayAsName;
 
 
 //
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-const today1 = new Date().toLocaleDateString('en-US', options);
-console.log(today1); // Output: "March 5, 2025" (or the current date)
+const yearMonthDay = { year: 'numeric', month: 'long', day: 'numeric' };
+
+// const today1 = new Date().toLocaleDateString([], options);
+
+const date = today.toLocaleDateString('en-US', yearMonthDay);
+
+// console.log(today1);
 
 const currentDate = document.getElementById('current-date');
-currentDate.innerText = today1;
+currentDate.innerText = date;
